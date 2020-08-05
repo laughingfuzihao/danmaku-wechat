@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="content">
+
+    <image class='background' src="https://pic3.zhimg.com/80/v2-a2f0030f03fd5b19326b12d3ee947436_720w.jpg?source=1940ef5c" mode="aspectFill"></image>
+
+<view class="container">
+    <div class="weui_cells_title" style="font-size:24px;color:#fff;">大屏弹幕</div>
+<div class="weui_cells weui_cells_form">
+  <div class="weui_cell">
+    <div class="weui_cell_bd weui_cell_primary">
+      <textarea class="weui_textarea" placeholder="请输入弹幕" rows="2"  bindinput="getInput" value="{{danmaku}}" maxlength="20" onkeyup="wordStatic(this);"></textarea>
+      <div class="weui_textarea_counter"><span id="content">{{content}}</span>/20</div>
+    </div>
+  </div>
+</div>
+  <view class="contactline">
+<button class='goodbutton'  hover-class="hover" bindtap="send" >发送</button>
+  </view>
+
+</view>
+</view>
